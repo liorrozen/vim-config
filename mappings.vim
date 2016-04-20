@@ -62,5 +62,19 @@ fun! SudoSave()
     endif
 endfunction
 
+" use Shift+L to toggle relative/normal line numbering
+function! g:ToggleNuMode()
+  if &nu == 1
+    " relative line numbers on
+    set rnu
+    set nonu
+  else
+    set nu
+    " relative line numbers off
+    set nornu
+  endif
+endfunction
+nnoremap <silent><S-L> :call g:ToggleNuMode()<cr>
+
 " Show cursor location (guidelines)
 nnoremap <Leader>g :set cursorline! cursorcolumn!<CR>

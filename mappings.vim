@@ -2,6 +2,9 @@
 " Mappings
 " ========
 
+" When autocomplete popup is open, enter just inserts selected item
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
 " Always open tselect buffer if there is more than one matching tag
 map <C-]> g<C-]>
 

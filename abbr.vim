@@ -1,6 +1,6 @@
 cnoreabbrev regs reg
-cnoreabbrev Ag LAg!
-cnoreabbrev ag LAg!
+cnoreabbrev Ag Ag!
+cnoreabbrev ag Ag!
 cnoreabbrev W w
 cnoreabbrev Wq wq
 cnoreabbrev Qa qa

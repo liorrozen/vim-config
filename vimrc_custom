@@ -1,7 +1,7 @@
 " ======
 " Global
 " ======
-let $HOME='/home/lior'
+let $HOME='/Users/lior'
 let $MYVIMRC = $HOME.'/.vim/vimrc_custom'
 let $VIMRUNTIME= $HOME.'/vim/runtime'
 let &runtimepath .= ','.$VIMRUNTIME

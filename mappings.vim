@@ -78,3 +78,9 @@ nnoremap <silent><S-L> :call g:ToggleNuMode()<cr>
 
 " Show cursor location (guidelines)
 nnoremap <Leader>g :set cursorline! cursorcolumn!<CR>
+
+" Jump list mappings
+" go back in jump list
+map ,o <C-o>
+" go forwards in jump list
+map ,i <C-i>

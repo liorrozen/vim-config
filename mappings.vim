@@ -84,3 +84,7 @@ nnoremap <Leader>g :set cursorline! cursorcolumn!<CR>
 map ,o <C-o>
 " go forwards in jump list
 map ,i <C-i>
+
+" Sync syntax highlighting
+noremap <F5> <Esc>:syntax sync fromstart<CR>
+inoremap <F5> <C-o>:syntax sync fromstart<CR>

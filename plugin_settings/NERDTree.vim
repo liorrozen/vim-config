@@ -2,4 +2,4 @@
 let NERDTreeIgnore = ['\.pyc$'] "ignore .pyc files
 let NERDTreeShowHidden = 1
 map <TAB> :NERDTreeToggle<CR>
-map <S-TAB> :NERDTreeFind<CR>
+map <S-TAB> :NERDTree %:p:h<CR>

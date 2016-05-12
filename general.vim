@@ -47,7 +47,7 @@ set textwidth=0 " if word wrap is enabled, this is the max character length
 set indentkeys-=<:> " Don't indent after typing a colon (annoying!!!)
 
 " Remove any and all trailing whitespace
-" autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 " jump to the last position when reopening a file
 if has("autocmd")

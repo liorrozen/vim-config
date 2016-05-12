@@ -18,6 +18,7 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 set statusline=%f     " show relative path in status line
 let g:netrw_liststyle=3       " Explore set to tree view
 set completeopt=longest,menuone " doesn't select first item; insert longest common text; always show menu
+set sidescroll=1
 
 " Settings for GUI version of Vim
 set guioptions-=T 			" Remove toolbar

@@ -1,6 +1,6 @@
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/L9'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tmhedberg/matchit'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-repeat'

@@ -9,8 +9,12 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 map <C-]> g<C-]>
 
 " navigate quickfix locations
-nmap ]q :lne<cr>
-nmap [q :lp<cr>
+nmap ]q :lnext<cr>
+nmap [q :lprevious<cr>
+
+" navigate location list
+nmap ]w :cnext<cr>
+nmap [w :cprevious<cr>
 
 " toggle last buffer
 nmap <LEADER>b :b# <CR>

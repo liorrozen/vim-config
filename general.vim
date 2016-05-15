@@ -24,7 +24,7 @@ set sidescroll=1
 set guioptions-=T 			" Remove toolbar
 set guioptions+=mbr 		" Add menubar, bottom and right side scrollbars
 
-" first tab completed to the longest common match, or full match, 
+" first tab completed to the longest common match, or full match,
 " second tab completed to show list of all matches,
 " third tab starts to cycle through matches
 set wildmode=longest,list,full
@@ -45,9 +45,8 @@ set expandtab " converts tabs to spaces
 set nowrap " don't use word wrap
 set textwidth=0 " if word wrap is enabled, this is the max character length
 set indentkeys-=<:> " Don't indent after typing a colon (annoying!!!)
-
-" Remove any and all trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
+set nospell " Spell checker defaults to off
+autocmd BufWritePre * :%s/\s\+$//e " Remove any and all trailing whitespace
 
 " jump to the last position when reopening a file
 if has("autocmd")

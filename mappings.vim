@@ -66,6 +66,18 @@ fun! SudoSave()
     endif
 endfunction
 
+" Toggle spell checker with <LEADER>sp
+function! g:ToggleSpell()
+  if &spell == 0
+    " turn spell on
+    set spell spelllang=en_us
+  else
+    " turn spell off
+    set nospell
+  endif
+endfunction
+nnoremap <silent><LEADER>sp :call g:ToggleSpell()<cr>
+
 " use Shift+L to toggle relative/normal line numbering
 function! g:ToggleNuMode()
   if &nu == 1

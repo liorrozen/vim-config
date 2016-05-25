@@ -71,11 +71,8 @@ set showmatch 	" Show matching brackets.
 
 " Backups
 " =======
-set backup
-set backupext=.bak
-set backupcopy=yes
-set backupdir=$HOME/.vim_backup/ 	" TODO - ensure folder exists
-set directory=$HOME/.vim_swap/ 		" Swap file location. TODO - ensure folder exists
+set nobackup
+set noswapfile
 
 " Ensure syntax highlighting & filetype detecton are turned on
 syntax on

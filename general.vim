@@ -69,6 +69,14 @@ set smartcase			        " case sensitive if uppercase
 set incsearch			        " move the cursor to first result
 set showmatch 	" Show matching brackets.
 
+" Backups
+" =======
+set backup
+set backupext=.bak
+set backupcopy=yes
+set backupdir=$HOME/.vim_backup/ 	" TODO - ensure folder exists
+set directory=$HOME/.vim_swap/ 		" Swap file location. TODO - ensure folder exists
+
 " Ensure syntax highlighting & filetype detecton are turned on
 syntax on
 filetype plugin indent on

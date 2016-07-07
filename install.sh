@@ -9,4 +9,4 @@ vim +PlugInstall +qall
 cd ~/.vim/plugged/YouCompleteMe/ 
 
 # Execute the YouCompleteMe install script
-./install.py --clang-completer --gocode-completer --tern-completer
+./install.py --clang-completer --tern-completer

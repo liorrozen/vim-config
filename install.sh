@@ -16,3 +16,6 @@ cd ~/.vim/plugged/YouCompleteMe/
 
 # Install tern (should use node installed with nvm)
 cd ~ && npm install -g tern
+
+# Append or create ~/.vimrc file sourcing vimrc_custom
+echo 'source ~/.vim/vimrc_custom' >> ~/.vimrc

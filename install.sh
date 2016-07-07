@@ -5,6 +5,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # Open vim, run :PlugInstall and quit
 vim +PlugInstall +qall
 
+# Ensure cmake is installed for YCM
+type cmake || brew install cmake
+
 # Go to the YouCompleteMe folder
 cd ~/.vim/plugged/YouCompleteMe/
 

@@ -4,3 +4,5 @@ cnoreabbrev ag Ag!
 cnoreabbrev W w
 cnoreabbrev Wq wq
 cnoreabbrev Qa qa
+cnoreabbrev Tabe tabe
+

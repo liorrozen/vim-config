@@ -2,6 +2,12 @@
 " Mappings
 " ========
 
+" Select entire line excluding new lines
+nnoremap <leader>v 0vg_
+
+" Select entire file
+nnoremap <leader>a ggVG
+
 " When autocomplete popup is open, enter just inserts selected item
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
@@ -104,3 +110,6 @@ map ,i <C-i>
 " Sync syntax highlighting
 noremap <F5> <Esc>:syntax sync fromstart<CR>
 inoremap <F5> <C-o>:syntax sync fromstart<CR>
+
+" Insert newline between comma seperated values
+nmap <LEADER>j :s/,/,\r/g

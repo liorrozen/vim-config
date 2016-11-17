@@ -19,6 +19,7 @@ set statusline=%f     " show relative path in status line
 let g:netrw_liststyle=3       " Explore set to tree view
 set completeopt=longest,menuone " doesn't select first item; insert longest common text; always show menu
 set sidescroll=1
+set t_Co=256 " 256 colors
 
 " Settings for GUI version of Vim
 set guioptions-=T 			" Remove toolbar
@@ -46,6 +47,7 @@ set nowrap " don't use word wrap
 set textwidth=0 " if word wrap is enabled, this is the max character length
 set indentkeys-=<:> " Don't indent after typing a colon (annoying!!!)
 set nospell " Spell checker defaults to off
+set spellfile=~/.vim/myspell.utf-8.add
 autocmd BufWritePre * :%s/\s\+$//e " Remove any and all trailing whitespace
 
 " jump to the last position when reopening a file

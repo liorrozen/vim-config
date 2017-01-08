@@ -27,3 +27,5 @@ Plug 'geekjuice/vim-mocha'
 Plug 'dkprice/vim-easygrep'
 Plug 'tpope/vim-dispatch'
 Plug 'majutsushi/tagbar'
+Plug 'myw/vim-polymer'
+

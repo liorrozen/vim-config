@@ -3,6 +3,10 @@
 " ========
 
 " Select entire line excluding new lines
+nnoremap t gt
+nnoremap T gT
+
+" Select entire line excluding new lines
 nnoremap <leader>v 0vg_
 
 " Select entire file

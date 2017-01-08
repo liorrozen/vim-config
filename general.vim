@@ -56,6 +56,15 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 
+" Keep undo history across sessions by storing it in a file
+if has('persistent_undo')
+    let myUndoDir = expand($HOME.'/.vim' . '/undodir')
+    " Create dirs
+    call system('mkdir ' . myUndoDir)
+    let &undodir = myUndoDir
+    set undofile
+endif
+
 " Folding
 " ======
 set foldmethod=indent   "fold based on indent

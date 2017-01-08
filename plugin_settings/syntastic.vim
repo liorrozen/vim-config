@@ -17,7 +17,10 @@ let g:syntastic_python_flake8_args='--ignore=E251,E201,E202,E203,E127,E128,E261'
 " let g:syntastic_python_checker_args='--ignore=F401'
 
 let g:syntastic_javascript_checkers = [ 'eslint' ]
-let g:syntastic_javascript_checker_args='--config ~/.eslintrc'
+let g:syntastic_javascript_eslint_args='-c panoplyio'
+
+let g:syntastic_polymerhtml_checkers = [ 'polylint', 'eslint' ]
+let g:syntastic_polymerhtml_eslint_args='-c panoplyio'
 
 let g:syntastic_html_tidy_ignore_errors = [ 'is not recognized!', 'discarding unexpected' ]
 

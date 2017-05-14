@@ -20,6 +20,7 @@ let g:netrw_liststyle=3       " Explore set to tree view
 set completeopt=longest,menuone " doesn't select first item; insert longest common text; always show menu
 set sidescroll=1
 set t_Co=256 " 256 colors
+set t_ut= " disable Background Color Erase
 
 " Settings for GUI version of Vim
 set guioptions-=T 			" Remove toolbar
@@ -56,14 +57,14 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 
-" Keep undo history across sessions by storing it in a file
-if has('persistent_undo')
-    let myUndoDir = expand($HOME.'/.vim' . '/undodir')
-    " Create dirs
-    call system('mkdir ' . myUndoDir)
-    let &undodir = myUndoDir
-    set undofile
-endif
+" " Keep undo history across sessions by storing it in a file
+" if has('persistent_undo')
+"     let myUndoDir = expand($HOME.'/.vim' . '/undodir')
+"     " Create dirs
+"     call system('mkdir ' . myUndoDir)
+"     let &undodir = myUndoDir
+"     set undofile
+" endif
 
 " Folding
 " ======

@@ -7,6 +7,8 @@ map <C-b> :CtrlPBuffer<CR>
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_buffer_func = { 'enter': 'CtrlPDeleteBuffer' }
 let g:ctrlp_max_height = 50
+let g:ctrlp_cmd = 'CtrlPLastMode'
+let g:ctrlp_extensions = ['line']
 
 func! CtrlPDeleteBuffer()
     nnoremap <buffer> <silent> <c-q> :call <sid>DeleteBuffer()<cr>

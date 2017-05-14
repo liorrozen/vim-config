@@ -14,3 +14,9 @@ hi DiffText   cterm=bold ctermfg=black ctermbg=88 gui=none guifg=bg guibg=Red
 " Sets popup and selection colors
 hi Pmenu ctermbg=246 ctermfg=232
 hi PmenuSel ctermbg=237 ctermfg=250
+
+" Indicate max line length my coloring the 80th column
+" http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
+set colorcolumn=80
+highlight ColorColumn ctermbg=233
+

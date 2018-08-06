@@ -4,7 +4,11 @@ set nocompatible		        " disable vi backwards compatibilty
 set backspace=indent,eol,start 	  	" fixes backspace & del behavior
 set timeoutlen=1000 ttimeoutlen=0 	" No delay for ESC
 nmap Q <nop>				" disable ex mode prompt
-set ttymouse=xterm2
+if has("mouse_sgr")
+    set ttymouse=sgr " fixes mouse selection beyond column 222 in xterm
+else
+    set ttymouse=xterm2
+end
 set autoread 	" Automatically reload files that have been changed outside of Vim
 set confirm 	" confirm before exiting if files have not been saved
 set hidden 	" Hide buffers when they are abandoned
@@ -21,6 +25,7 @@ set completeopt=longest,menuone " doesn't select first item; insert longest comm
 set sidescroll=1
 set t_Co=256 " 256 colors
 set t_ut= " disable Background Color Erase
+set listchars+=space:␣ " also display space characters with :set list
 
 " Settings for GUI version of Vim
 set guioptions-=T 			" Remove toolbar
@@ -49,7 +54,15 @@ set textwidth=0 " if word wrap is enabled, this is the max character length
 set indentkeys-=<:> " Don't indent after typing a colon (annoying!!!)
 set nospell " Spell checker defaults to off
 set spellfile=~/.vim/myspell.utf-8.add
-autocmd BufWritePre * :%s/\s\+$//e " Remove any and all trailing whitespace
+
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces() " Remove any and all trailing whitespace
+function! <SID>StripTrailingWhitespaces()
+  let l = line(".")
+  let c = col(".")
+  %s/\s\+$//e
+  call cursor(l, c)
+endfun
+
 
 " jump to the last position when reopening a file
 if has("autocmd")
@@ -68,11 +81,9 @@ endif
 
 " Folding
 " ======
-set foldmethod=indent   "fold based on indent
-set foldnestmax=10      "deepest fold is 10 levels
-set foldlevel=1         "this is just what i use
-set foldlevelstart=100  " keep first 100 levels of folds open as default
-set nofoldenable        " don't enable folds till they are interacted with
+set foldmethod=indent
+set foldnestmax=1
+set foldlevel=1
 
 " Search
 " ======

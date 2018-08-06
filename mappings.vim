@@ -2,6 +2,9 @@
 " Mappings
 " ========
 
+nnoremap <c-=> <C-a>
+nnoremap <c--> <C-x>
+
 " Select entire line excluding new lines
 nnoremap t gt
 nnoremap T gT
@@ -30,7 +33,7 @@ nmap [w :cprevious<cr>
 nmap <LEADER>b :b# <CR>
 
 " Vimrc editing mappings
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>ev :e $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Navigate splits with CTRL+hjkl
@@ -51,7 +54,8 @@ vmap [e :m'>+<CR>gv=`<my`>mzgv`yo`z
 imap [e <Esc>:m+<CR>==gi
 
 " Faster saves
-nnoremap ,s :w<CR>
+nnoremap ,a :wa<CR>
+nnoremap ,, :w<CR>
 nnoremap ,w :w<CR>
 " Faster closing of buffers
 noremap Q :q<cr>
@@ -117,3 +121,6 @@ inoremap <F5> <C-o>:syntax sync fromstart<CR>
 
 " Insert newline between comma seperated values
 nmap <LEADER>j :s/,/,\r/g
+
+" Toggle paste mode with F3 (turns off auto indent)
+set pastetoggle=<F3>

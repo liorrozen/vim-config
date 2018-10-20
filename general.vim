@@ -3,7 +3,8 @@
 set nocompatible		        " disable vi backwards compatibilty
 set backspace=indent,eol,start 	  	" fixes backspace & del behavior
 set timeoutlen=1000 ttimeoutlen=0 	" No delay for ESC
-nmap Q <nop>				" disable ex mode prompt
+nmap Q <Nop> " disable ex mode prompt
+nmap K <Nop> " disable lookup man page for word under cursor
 if has("mouse_sgr")
     set ttymouse=sgr " fixes mouse selection beyond column 222 in xterm
 else

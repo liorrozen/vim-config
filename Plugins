@@ -30,7 +30,6 @@ Plug 'neomake/neomake'
 Plug 'rizzatti/dash.vim'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-rhubarb'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'fatih/vim-go', { 'tag': 'v1.13' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'vim-scripts/applescript.vim'

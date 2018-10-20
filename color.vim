@@ -22,6 +22,3 @@ highlight ColorColumn ctermbg=233
 
 " Sets search match colors
 hi Search cterm=NONE ctermfg=black ctermbg=yellow
-
-hi NeomakeError ctermfg=black ctermbg=yellow
-hi NeomakeWarning ctermfg=black ctermbg=red

@@ -13,3 +13,6 @@ let g:neomake_info_sign={'text': 'ℹ', 'texthl': 'NeomakeErrorMsg'}
 
 " Auto run Neomake for read/write immediately
 call neomake#configure#automake('rw')
+
+hi NeomakeError ctermfg=black ctermbg=yellow
+hi NeomakeWarning ctermfg=black ctermbg=red

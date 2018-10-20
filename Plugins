@@ -33,6 +33,5 @@ Plug 'tpope/vim-rhubarb'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'fatih/vim-go', { 'tag': 'v1.13' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'vim-scripts/applescript.vim'
 Plug 'tpope/vim-dadbod'

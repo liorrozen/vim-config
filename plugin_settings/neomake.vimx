@@ -6,6 +6,19 @@ let g:neomake_javascript_eslint_maker = {
       \ 'errorformat': '%E%f: line %l\, col %c\, Error - %m,' .
       \ '%W%f: line %l\, col %c\, Warning - %m'
       \ }
+let g:neomake_ruby_enabled_makers = ['rubocop']
+
+let g:neomake_go_enabled_makers = ['golint', 'govet' ]
+
+let g:neomake_python_flake8_maker = {
+    \ 'args': ['--format=default'],
+    \ 'errorformat':
+        \ '%E%f:%l: could not compile,%-Z%p^,' .
+        \ '%A%f:%l:%c: %t%n %m,' .
+        \ '%A%f:%l: %t%n %m,' .
+        \ '%-G%.%#',
+    \ }
+let g:neomake_python_enabled_makers = ['flake8']
 
 let g:neomake_warning_sign={'text': '⚠', 'texthl': 'NeomakeErrorMsg'}
 let g:neomake_error_sign={'text': 'X', 'texthl': 'NeomakeErrorMsg'}

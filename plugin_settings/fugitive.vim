@@ -1,3 +1,4 @@
 " Fugitive
 set diffopt=vertical
-map ,gs :Gstatus<CR>
+map ,gs :G<CR>
+map ,gp :G push<CR>

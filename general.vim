@@ -5,14 +5,20 @@ set backspace=indent,eol,start 	  	" fixes backspace & del behavior
 set timeoutlen=1000 ttimeoutlen=0 	" No delay for ESC
 nmap Q <Nop> " disable ex mode prompt
 nmap K <Nop> " disable lookup man page for word under cursor
-if has("mouse_sgr")
-    set ttymouse=sgr " fixes mouse selection beyond column 222 in xterm
-else
-    set ttymouse=xterm2
-end
+"if has("mouse_sgr")
+"    set ttymouse=sgr " fixes mouse selection beyond column 222 in xterm
+"else
+"    set ttymouse=xterm2
+"end
 set autoread 	" Automatically reload files that have been changed outside of Vim
 set confirm 	" confirm before exiting if files have not been saved
 set hidden 	" Hide buffers when they are abandoned
+
+" Tags
+" =====
+" set tags=$CWD./.git/vim.tags;,tags;
+" set tags=expand('./.git/vim.tags');
+" set tags=./.git/vim.tags;,tags;
 
 " UI
 " ===
@@ -45,9 +51,15 @@ set scrolloff=5
 
 " Editing
 " =======
-set tabstop=2 " how many columns is a tab space
-set shiftwidth=2 " indentation with the << and >> mappings
-set softtabstop=2 " columns to insert when pressing tab in insert mode
+set tabstop=2       " The width of a TAB is set to 4.
+                    " Still it is a \t. It is just that
+                    " Vim will interpret it to be having
+                    " a width of 4.
+
+set shiftwidth=2    " Indents will have a width of 4
+
+set softtabstop=2   " Sets the number of columns for a TAB
+
 set expandtab " converts tabs to spaces
 " set smarttab
 set nowrap " don't use word wrap
@@ -71,20 +83,15 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 
-" " Keep undo history across sessions by storing it in a file
-" if has('persistent_undo')
-"     let myUndoDir = expand($HOME.'/.vim' . '/undodir')
-"     " Create dirs
-"     call system('mkdir ' . myUndoDir)
-"     let &undodir = myUndoDir
-"     set undofile
-" endif
-
 " Folding
 " ======
-set foldmethod=indent
-set foldnestmax=1
-set foldlevel=1
+" set foldmethod=indent
+" set foldnestmax=1
+" set foldlevel=1
+set foldmethod=syntax
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
 
 " Search
 " ======
@@ -92,6 +99,7 @@ set ignorecase			        " case insensitive search
 set smartcase			        " case sensitive if uppercase
 set incsearch			        " move the cursor to first result
 set showmatch 	" Show matching brackets.
+set nohlsearch
 
 " Backups
 " =======

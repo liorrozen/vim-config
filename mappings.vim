@@ -15,8 +15,8 @@ nnoremap <leader>v 0vg_
 " Select entire file
 nnoremap <leader>a ggVG
 
-" When autocomplete popup is open, enter just inserts selected item
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" " When autocomplete popup is open, enter just inserts selected item
+" inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Always open tselect buffer if there is more than one matching tag
 map <C-]> g<C-]>
@@ -59,26 +59,6 @@ nnoremap ,, :w<CR>
 nnoremap ,w :w<CR>
 " Faster closing of buffers
 noremap Q :q<cr>
-
-" Map save to Ctrl+S (old habbits die hard)
-map <c-s> :call CustomSave()<CR>
-map! <c-s> <ESC>:call CustomSave()<CR>
-fun! CustomSave()
-    if &readonly
-        execute ":call SudoSave()"
-    else
-        execute ":w! "
-    endif
-    if (&ft == "php.html.js.css")
-        execute ":! php -l %"
-    endif
-endfunction
-fun! SudoSave()
-    let doSave=input("sudo save? [y/n]: ")
-    if (doSave == "y")
-        execute ":w !sudo tee >/dev/null %"
-    endif
-endfunction
 
 " Toggle spell checker with <LEADER>sp
 function! g:ToggleSpell()

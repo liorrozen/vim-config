@@ -1,4 +1,4 @@
-" Plug 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'Valloric/listtoggle'
 Plug 'easymotion/vim-easymotion'
@@ -29,7 +29,22 @@ Plug 'tsandall/vim-rego'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" :CocInstall coc-browser coc-calc coc-css coc-ember coc-eslint coc-go coc-html coc-json coc-pyright coc-sh coc-solargraph coc-sql coc-tsserver coc-vimlsp coc-yaml coc-highlight
+" :CocInstall
+" coc-browser
+" coc-calc
+" coc-css
+" coc-eslint
+" coc-go
+" coc-pyright
+" coc-html
+" coc-json
+" coc-sh
+" coc-sql
+" coc-tsserver
+" coc-vimlsp
+" coc-yaml
+" coc-highlight
+" coc-docker
 
 Plug 'github/copilot.vim'
 Plug 'tmhedberg/matchit'

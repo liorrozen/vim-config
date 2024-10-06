@@ -5,3 +5,4 @@ map <TAB> :NERDTreeToggle<CR>
 map <S-TAB> :NERDTreeFind<CR>
 let g:NERDTreeMapHelp = '<F12>'
 let g:NERDTreeMapOpenInTab = ''
+

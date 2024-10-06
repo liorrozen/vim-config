@@ -18,13 +18,14 @@ call plug#end()
 " ==================
 " Load more settings
 " ==================
+
 for f in split(glob($HOME.'/.vim/plugin_settings/*.vim'), '\n')
   exe 'source' f
 endfor
+
 source $HOME/.vim/filetype.vim
 source $HOME/.vim/general.vim
 source $HOME/.vim/mappings.vim
-
 source $HOME/.vim/abbr.vim
 source $HOME/.vim/color.vim
 
@@ -41,4 +42,10 @@ if !has('gui_running')
     au InsertEnter * set timeoutlen=0
     au InsertLeave * set timeoutlen=1000
   augroup END
+endif
+
+" get rid of [  ] around icons in NerdTree
+syntax enable
+if exists("g:loaded_webdevicons")
+	call webdevicons#refresh()
 endif

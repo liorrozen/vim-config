@@ -15,11 +15,9 @@ nnoremap <leader>v 0vg_
 " Select entire file
 nnoremap <leader>a ggVG
 
-" " When autocomplete popup is open, enter just inserts selected item
-" inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
 " Always open tselect buffer if there is more than one matching tag
 map <C-]> g<C-]>
+
 
 " navigate quickfix locations
 nmap ]q :lnext<cr>

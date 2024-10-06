@@ -1,6 +1,3 @@
-Plug 'SirVer/ultisnips'
-" Plug 'Valloric/YouCompleteMe'
-" Plug 'Valloric/listtoggle'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'flazz/vim-colorschemes'
@@ -10,22 +7,14 @@ Plug 'hynek/vim-python-pep8-indent'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'majutsushi/tagbar'
-" Plug 'moll/vim-node'
-" Plug 'neomake/neomake'
 Plug 'othree/html5.vim'
-" Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript'}
-" Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
-" Plug 'rizzatti/dash.vim'
 Plug 'rking/ag.vim'
 
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tsandall/vim-rego'
-
-" Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
-"Plug 'ternjs/tern_for_vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -64,7 +53,6 @@ Plug 'vim-scripts/L9'
 Plug 'vim-scripts/applescript.vim'
 Plug 'Konfekt/FastFold'
 Plug 'editorconfig/editorconfig-vim'
-" Plug 'ervandew/supertab'
 Plug 'towolf/vim-helm'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'zackhsi/fzf-tags'
@@ -76,7 +64,6 @@ Plug 'c9s/vikube.vim'
 Plug 'rottencandy/vimkubectl'
 
 " Python
-" Plug 'psf/black'
 Plug 'nvie/vim-flake8'
 
 Plug 'mustache/vim-mustache-handlebars'

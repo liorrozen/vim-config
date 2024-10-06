@@ -107,5 +107,4 @@ set nobackup
 set noswapfile
 
 " Ensure syntax highlighting & filetype detecton are turned on
-syntax on
 filetype plugin indent on

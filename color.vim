@@ -1,6 +1,12 @@
-" General colors
-colorscheme desert    " use this color scheme
-set background=dark   " adapt colors for background
+if !exists('g:loaded_color')
+  let g:loaded_color = 1
+
+  set background=dark
+  " Put your favorite colorscheme here
+  colorscheme desert
+
+endif
+
 
 hi clear SpellBad
 hi SpellBad cterm=undercurl ctermfg=red

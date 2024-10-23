@@ -2,6 +2,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'flazz/vim-colorschemes'
 Plug 'hashivim/vim-terraform'
+" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -11,8 +12,12 @@ Plug 'othree/html5.vim'
 Plug 'posva/vim-vue'
 Plug 'rking/ag.vim'
 
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'preservim/nerdtree'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+"
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'nvim-tree/nvim-web-devicons'
+
 Plug 'ryanoasis/vim-devicons'
 Plug 'tsandall/vim-rego'
 
@@ -34,11 +39,15 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " coc-yaml
 " coc-highlight
 " coc-docker
+" coc-htmldjango
 
-Plug 'github/copilot.vim'
 Plug 'tmhedberg/matchit'
 Plug 'tomtom/tcomment_vim'
+
 Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'kristijanhusak/vim-dadbod-completion' "Optional
+
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-liquid'
@@ -67,3 +76,10 @@ Plug 'rottencandy/vimkubectl'
 Plug 'nvie/vim-flake8'
 
 Plug 'mustache/vim-mustache-handlebars'
+
+" DAP
+Plug 'mfussenegger/nvim-dap'
+Plug 'mfussenegger/nvim-dap-ui'
+Plug 'nvim-neotest/nvim-nio'
+
+Plug 'mfussenegger/nvim-dap-python'

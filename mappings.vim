@@ -2,12 +2,10 @@
 " Mappings
 " ========
 
+nnoremap <leader>h :History<cr>
+
 nnoremap <c-=> <C-a>
 nnoremap <c--> <C-x>
-
-" Select entire line excluding new lines
-nnoremap t gt
-nnoremap T gT
 
 " Select entire line excluding new lines
 nnoremap <leader>v 0vg_
@@ -48,8 +46,8 @@ vmap ]e :m'<-2<cr>gv=`>my`<mzgv`yo`z
 
 " down
 nmap [e mz:m+<CR>`z==
-vmap [e :m'>+<CR>gv=`<my`>mzgv`yo`z
 imap [e <Esc>:m+<CR>==gi
+vmap [e :m'>+<CR>gv=`<my`>mzgv`yo`z
 
 " Faster saves
 nnoremap ,a :wa<CR>
@@ -87,18 +85,5 @@ nnoremap <silent><S-L> :call g:ToggleNuMode()<cr>
 " Show cursor location (guidelines)
 nnoremap <Leader>g :set cursorline! cursorcolumn!<CR>
 
-" Jump list mappings
-" go back in jump list
-map ,o <C-o>
-" go forwards in jump list
-map ,i <C-i>
-
-" Sync syntax highlighting
-noremap <F5> <Esc>:syntax sync fromstart<CR>
-inoremap <F5> <C-o>:syntax sync fromstart<CR>
-
-" Insert newline between comma seperated values
-nmap <LEADER>j :s/,/,\r/g
-
-" Toggle paste mode with F3 (turns off auto indent)
-set pastetoggle=<F3>
+nmap t :tabnext<cr>
+nmap T :tabprevious<cr>
